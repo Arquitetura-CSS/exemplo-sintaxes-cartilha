@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+
+.card {
+    @extend %block;
+    @extend %center;
+    @include block__dimension(15px, 290px, 290px);
+
+    &__header {
+        @extend %block__header;
+        @include block__dimension(15px 15px 0 0, 45px, null);
+    }
+
+    &__body {
+        @extend %block__body;
+        @include block__dimension(null, 200px, null);
+    }
+
+    &__footer {
+        background: $c-neutral-10;
+        border-top: 1px solid $c-border;
+        font-size: rem(12);
+        font-style: italic;
+        font-weight: 400;
+        line-height: rem(14);
+        padding: 15px;
+        @include block__dimension(0 0 15px 15px, 45px, null);
+    }
+}

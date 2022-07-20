@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.accordion { 
+    @extend %block;
+    @extend %center;
+    @include block__dimension(null, null, 290px);
+
+    &__header {
+        @extend %block__header;
+        @include block__dimension(null, 45px, null);
+    }
+
+    &__body {
+        @extend %block__body;
+        @include block__dimension(null, 200px, null);
+    }
+}

@@ -1,0 +1,5 @@
+@mixin block__dimension($border-radius, $height, $width) {
+  border-radius: $border-radius;
+  height: $height;
+  width: $width;
+}

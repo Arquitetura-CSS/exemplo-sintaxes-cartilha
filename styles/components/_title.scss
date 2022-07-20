@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.title {
+    font-size: rem(26);
+    font-weight: bold;
+    line-height: rem(30);
+    margin: 0;
+}

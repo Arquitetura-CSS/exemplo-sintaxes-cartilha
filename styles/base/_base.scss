@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: $f-size-default;
+}
+
+body {
+    color: $c-text-main;
+    font-family: $f-family-main;
+    font-size: rem(14);
+    line-height: rem(17);
+}

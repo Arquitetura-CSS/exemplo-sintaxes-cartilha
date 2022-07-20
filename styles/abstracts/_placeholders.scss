@@ -1,0 +1,26 @@
+@use "variables" as *;
+
+%center {
+    display: block;
+    margin: 0 auto;
+}
+
+%block {
+    background: #FAFAFA;
+    border: 1px solid $c-border;
+}
+
+%block__header {
+    background: $c-neutral-10;
+    border-bottom: 1px solid $c-border;
+    font-size: rem(18);
+    font-weight: bold;
+    line-height: rem(22);
+    padding: 15px;
+}
+
+%block__body {
+    font-size: rem(12);
+    line-height: rem(14);
+    padding: 15px;
+}
